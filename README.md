@@ -1,4 +1,4 @@
-# Movie-Ratings-Problem_pthread_semaphores
+# Movie Ratings Problem Solution: A Demonstration of PThread and Semaphores
 ## Problem Statement
 Rotten Tomatoes is a recommendation website for quality entertainment. The viewers can look for the ratings associated with every movie or series. A set of processes concurrently search in the movie database for keywords. Given a keyword (like dragon), a search process reads all the movie records, identifies only those movies whose descriptions contain the keyword, and prints these movies (names, directors, and release dates only) sorted in the decreasing order of the popularity ratings. In order that the database server does not become overloaded by many search processes, allow at most five processes at any instant. Use a counting semaphore to implement this restriction. When a sixth (or seventh or...) process attempts to make a search, it has to wait until one or more running search processes finish working with the database and signal the semaphore. Implement a synchronization method to solve the problem.
 ## About The Solution
